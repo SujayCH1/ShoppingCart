@@ -1,0 +1,74 @@
+.cartList {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.cartItem {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 128, 255, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.1s ease;
+}
+
+.cartItem:hover {
+    transform: translateY(-1px);
+}
+
+.cartItem img {
+    width: 150px; /* Set fixed width */
+    height: 150px; /* Set fixed height */
+    border-radius: 8px;
+    object-fit: contain; /* Ensures the image scales without distortion */
+    margin-right: 20px;
+}
+
+.itemDetails {
+    flex: 1; /* Take up available space */
+    padding-right: 20px; /* Adds padding on the right to give space for the button */
+}
+
+.itemName {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 8px 0;
+    display: block; /* Ensures that the name and quantity are stacked */
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.quantity {
+    font-size: 16px;
+    color: #333;
+    margin-top: 5px; /* Adds space between name and quantity */
+}
+
+.itemPrice {
+    color: #2c5282;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 8px 0;
+}
+
+.cartItem button {
+    padding: 8px 16px;
+    background-color: #2c5282;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+.cartItem button:hover {
+    background-color: #1a365d;
+}
